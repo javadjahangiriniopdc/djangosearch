@@ -4,6 +4,22 @@
 
     <div class="row">
         <div class="col-12">
+            <form action="" method="get">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="exampleInputSearch">search</label>
+                    <input type="text" class="form-control" id="exampleInputSearch" aria-describedby="SearchHelp"
+                           placeholder="Enter key" name="search">
+                    <small id="SearchHelp" class="form-text text-muted">please search key</small>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px">
+        <div class="col-12">
             <table class="table">
                 <thead>
                 <tr>
